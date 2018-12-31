@@ -1,0 +1,93 @@
+frimble #### Alias commands for 
+alias openall open bagmain&bagloot&pouchmoney&pouchsecret&pouchitems&pouchbelt;
+alias closeall close bagmain&bagloot&pouchmoney&pouchsecret&pouchitems&pouchbelt;
+alias set category openall Containers
+alias set category closeall Containers
+
+frimble #### Alias commands for managing 2 larger bags, one for loot, one for keeps. Requires appropriate bag nicknames to be set up.
+alias sts $ifarg:put $*$ in bagmain $else$ frimble You need to specify something. $endif$
+alias str $ifarg:take $*$ from bagmain $else$ frimble You need to specify something. $endif$
+alias stl open bagmain;look bagmain;close bagmain;
+alias stss $ifarg:put $*$ in bagquest $else$ frimble You need to specify something. $endif$
+alias stsr $ifarg:take $*$ from bagquest $else$ frimble You need to specify something. $endif$
+alias stsl open bagquest;look bagquest;close bagquest
+alias stls $ifarg:put $*$ in bagloot $else$ frimble You need to specify something. $endif$
+alias stlr $ifarg:take $*$ from bagloot $else$ frimble You need to specify something. $endif$
+alias stll open bagloot;look bagloot;close bagloot
+alias set category sts Containers
+alias set category str Containers
+alias set category stl Containers
+alias set category stss Containers
+alias set category stsr Containers
+alias set category stsl Containers
+alias set category stls Containers
+alias set category stlr Containers
+alias set category stll Containers
+
+frimble #### Alias commands for managing 2 set of pockets (ie: trousers,cloak).  Requires appropriate pocket nicknames to be set up.
+alias pocket $ifarg:put $*$ in pocketsmain $else$ frimble You need to specify something. $endif$
+alias pocketr $ifarg:take $*$ from pocketsmain $else$ frimble You need to specify something. $endif$
+alias pocketl look pocketsmain
+alias pocketc $ifarg:put $*$ in pocketscoat $else$ frimble You need to specify something. $endif$
+alias pocketcr $ifarg:take $*$ from pocketscoat $else$ frimble You need to specify something. $endif$
+alias pocketcl look pocketscoat
+alias set category pocket Containers
+alias set category pocketr Containers
+alias set category pocketl Containers
+alias set category pocketc Containers
+alias set category pocketcr Containers
+alias set category pocketcl Containers
+
+frimble #### Alias commands for managing upto 2 other pouches.  Requires appropriate pouch nicknames to be set up.
+alias pouch $ifarg:put $*$ in pouchsecret $else$ frimble You need to specify something. $endif$
+alias pouchs $ifarg:put $*$ in pouchsecret $else$ frimble You need to specify something. $endif$
+alias pouchr $ifarg:take $*$ from pouchsecret $else$ frimble You need to specify something. $endif$
+alias pouchl open pouchsecret;look pouchsecret;close pouchsecret
+alias set category pouch Containers
+alias set category pouchs Containers
+alias set category pouchr Containers
+alias set category pouchl Containers
+alias set category pouchi Containers
+alias set category pouchis Containers
+alias set category pouchir Containers
+alias set category pouchil Containers
+
+frimble #### Alias commands for managing a belt with pouches. Requires appropriate belt nickname to be set up.
+alias belt $ifarg:put $*$ in pouchbelt $else$ frimble You need to specify something. $endif$
+alias belts $ifarg:put $*$ in pouchbelt $else$ frimble You need to specify something. $endif$
+alias beltr $ifarg:take $*$ from pouchbelt $else$ frimble You need to specify something. $endif$
+alias beltl open pouchbelt;look pouchbelt;close pouchbelt
+alias set category belt Containers
+alias set category belts Containers
+alias set category beltr Containers
+alias set category beltl Containers
+
+frimble #### Nicknames for coin aliases.
+frimble ## Coins regarded as the coins we want (currently all of them)
+nickname every saveloy-rhinu&every quarter-rhinu&every half-rhinu&every rhinu&every ten-rhinu&every fifty-rhinu&every pence&every ten-pence&every half-dollar&every dollar&every ten-dollar&every royal&every ptascp&every talon&every toon&every talent&every ra&every thanra&every derechmus&every hemiobolus&every obolus&every drachma&every stater&every decadrachma&every mina&every tyrant&every cent&every livre&every forin&every ducat&every para&every two para&every five para&every ten para&every fifty para&every dinar&every two dinar&every five dinar&every ten dinar&every fifty dinar&every hundred dinar&every thousand dinar&every toman&every farthing&every penny&every ha'penny&every tuppence&every thruppence&every sixpence&every shilling&every crown&every tencrown&every sovereign&every hedgehog as coinswant
+frimble ## Coins regarded as 'all' coins. Mainly here for reference.
+nickname every saveloy-rhinu&every quarter-rhinu&every half-rhinu&every rhinu&every ten-rhinu&every fifty-rhinu&every pence&every ten-pence&every half-dollar&every dollar&every ten-dollar&every royal&every ptascp&every talon&every toon&every talent&every ra&every thanra&every derechmus&every hemiobolus&every obolus&every drachma&every stater&every decadrachma&every mina&every tyrant&every cent&every livre&every forin&every ducat&every para&every two para&every five para&every ten para&every fifty para&every dinar&every two dinar&every five dinar&every ten dinar&every fifty dinar&every hundred dinar&every thousand dinar&every toman&every farthing&every penny&every ha'penny&every tuppence&every thruppence&every sixpence&every shilling&every crown&every tencrown&every sovereign&every hedgehog as coinsall
+frimble ## Coins regarded as very high value. (about AM$100.00)
+nickname every fifty-rhinu&every royal&every ra&every thanra&every tyrant&every ducat&every fifty dinar&every hundred dinar&every thousand dinar&every toman&every tencrown&every sovereign&every hedgehog as coinsveryhigh 
+frimble ## Coins regarded as high value. (about AM$10.00)
+nickname every ten-rhinu&every ten-dollar&every talent&every mina&every forin&every five dinar&every ten dinar&every crown as coinshigh 
+frimble ## Coins regarded as medium value. (about AM$1.00)
+nickname every quarter-rhinu&every half-rhinu&every rhinu&every half-dollar&every dollar&every toon&every stater&every decadrachma&every livre&every fifty para&every dinar&every two dinar&every shilling as coinsmedium 
+frimble ## Coins regarded as low value. (about AM$0.10)
+nickname every ten-pence&every talon&every obolus&every drachma&every five para&every ten para&every thruppence&every sixpence as coinslow
+frimble ## Coins regarded as very low value. (about AM$0.01)
+nickname every saveloy-rhinu&every pence&every ptascp&every derechmus&every hemiobolus&every cent&every para&every two para&every farthing&every penny&every ha'penny&every tuppence as coinsverylow 
+
+frimble #### Nicknames for coins of different currency. Use shorthand terms, not long words!
+nickname agatean coins as coinsag
+nickname morporkian coins as coinsam
+nickname djelain coins as coinsdj
+nickname ephebian coins as coinsep
+nickname lancre coins as coinsla
+nickname genuan coins as coinsge
+nickname agatean coins as agc
+nickname morporkian coins as amc
+nickname djelain coins as djc
+nickname ephebian coins as epc
+nickname lancre coins as lfc
+nickname genuan coins as gec
