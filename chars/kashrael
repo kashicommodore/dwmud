@@ -1,5 +1,5 @@
 alias .plan 404
-alias .project EMail: kashicommdore@shadowmesa.net : Twitter/Facebook: Kashicommodore;Disclaimer: Character is roleplayed as old-fashioned Lancrastrian. He's not racist or sexist etc, but is not politically correct either. Thats not hate, he's just a cultural idiot.
+alias .project EMail: kashicommdore@shadowmesa.net : Twitter/Facebook: Kashicommodore;Some help:https://github.com/kashicommodore/dwmud;Disclaimer: Character is roleplayed as old-fashioned Lancrastrian. He's not racist or sexist etc, but is not politically correct either. Thats not hate, he's just a cultural idiot.
 
 frimble ## Nicknames: Change these to your appropriate bags.
 nickname worn backpack as bagmain
@@ -37,14 +37,14 @@ identify kitcomponents with pouches as component pouch
 frimble ## Nicknames: Change these to your appropriate weapons and scabbards.
 nickname katana as weaponmain
 nickname worn sword belt as scabbardmain
-nickname wakizashi as weaponsecond
-nickname worn sword belt as scabbardsecond
-nickname daggers as weaponlarge
-nickname worn wolfskin armbands as scabbardlarge
+nickname wakizashi&elegant stiletto as weaponsecond
+nickname worn sword belt&worn oliled leather thigh sheath as scabbardsecond
+nickname katana as weaponlarge
+nickname worn sword belt as scabbardlarge
 nickname daggers as weaponsmall
-nickname worn oiled thigh sheaths as scabbardsmall
-nickname daggers as weaponstealth
-nickname worn wolfskin armbands as scabbardstealth
+nickname worn wolfskin armbands as scabbardsmall
+nickname elegant stiletto as weaponstealth
+nickname worn oiled leather thigh sheaths as scabbardstealth
 nickname crossbow as weaponfired
 nickname worn bandolier as scabbardfired
 nickname klatchian throwing knife as weaponthrown
@@ -61,13 +61,13 @@ identify itemkeys as keys
 
 frimble ## Aliases for weapons drawing and sheathing.
 frimble ## Note: Change weapon names appropriately. Need to find a better way to manage this.
-alias dr1 sh0;draw weaponmain;nickname katana as weaponcurrent;
-alias dr2 sh0;draw weaponsecond;nickname wakizashi as weaponcurrent 
-alias dr3 sh0;draw weaponlarge;nickname daggers as weaponcurrent 
-alias dr4 sh0;draw weaponsmall;nickname daggers as weaponcurrent 
-alias dr5 sh0;draw weaponsmall;nickname daggers as weaponcurrent 
-alias dr6 sh0;draw weaponfired;nickname crossbow as weaponcurrent 
-alias dr7 sh0;draw weaponthrown;nickname klatchian throwing knife as weaponcurrent 
+alias dr1 sh0;draw weaponmain from scabbardmain;nickname katana as weaponcurrent;
+alias dr2 sh0;draw weaponsecond from scabbardsecond;nickname wakizashi as weaponcurrent 
+alias dr3 sh0;draw weaponlarge from scabbardlarge;nickname katana as weaponcurrent 
+alias dr4 sh0;draw weaponsmall from scabbardsmall;nickname daggers as weaponcurrent 
+alias dr5 sh0;draw weaponstealth from scabbardstealth;nickname elegant stiletto as weaponcurrent 
+alias dr6 sh0;draw weaponfired from scabbardfired;nickname crossbow as weaponcurrent 
+alias dr7 sh0;draw weaponthrown from scabbardthrown;nickname klatchian throwing knife as weaponcurrent 
 alias sh0 sheathe weaponcurrent;
 alias sh1 sheathe weaponmain in scabbardmain
 alias sh2 sheathe weaponsecond in scabbardsecond
