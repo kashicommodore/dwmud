@@ -1,3 +1,5 @@
+frimble #### Please note this file requires a character specific nickname file.
+
 frimble #### Alias commands for looting. These rely on loot nicknames being properly set and having at least 1 bag, preferably a big one!
 alias loot get coinswant&lootvaluables$ifarg:&$*$$endif$ except lootexcept from corpses;$ifarg:put it&them except coins&held weapons&worn in bagloot;$endif$;
 alias lootc get coinswant$ifarg:&$*$$endif$ from corpses except lootexcept ;$ifarg:put it&them except coins&held weapons&worn in bagloot;$endif$;
