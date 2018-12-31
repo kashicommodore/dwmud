@@ -1,0 +1,90 @@
+frimble ## Nicknames: Change these to your appropriate bags.
+nickname worn backpack as bagmain
+nickname worn backpack as bagloot
+nickname worn satchel as bagquest
+frimble ## Additional identity lines. Do not edit.
+identify bagloot as loot bag
+identify bagquest as quest bag
+identify bagmoney as money bag
+
+frimble ## Nicknames: Change these to your appropriate pouches.
+nickname worn small leather neck pouch as pouchmoney
+nickname worn small shoulder pouch 1 as pouchsecret
+nickname worn small shoulder pouch 2 as pouchitems
+nickname worn sturdy leather belt with pouches as pouchbelt
+frimble ## Additional identity lines. Do not edit.
+identify pouchsecret as secret bag
+identify pouchitems as items bag
+identify pouchbelt as utility bag
+
+frimble ## Nicknames: Change these to your appropriate pockets.
+nickname worn black leather trousers as pocketsmain
+nickname worn black leather trousers as pocketcoat
+frimble ## Additional identity lines. Do not edit.
+identify pocketsmain as pocket
+identify pocketscoat as cloak pocket
+
+frimble ## Nicknames: Change these to your appropriate medicine and component containers.
+nickname worn sturdy leather belt with pouches as kitmedicine
+nickname worn sturdy leather belt with pouches as kitcomponents
+frimble ## Additional identity lines. Do not edit. THESE ARE IMPORTANT!
+identify kitmedicine with pouches as medicine bag
+identify kitcomponents with pouches as component pouch
+
+frimble ## Nicknames: Change these to your appropriate weapons and scabbards.
+nickname katana as weaponmain
+nickname worn sword belt as scabbardmain
+nickname wakizashi as weaponsecond
+nickname worn sword belt as scabbardsecond
+nickname daggers as weaponlarge
+nickname worn wolfskin armbands as scabbardlarge
+nickname daggers as weaponsmall
+nickname worn oiled thigh sheaths as scabbardsmall
+nickname daggers as weaponstealth
+nickname worn wolfskin armbands as scabbardstealth
+nickname crossbow as weaponfired
+nickname worn bandolier as scabbardfired
+nickname klatchian throwing knife as weaponthrown
+nickname worn knife belt as scabbardthrown
+
+frimble ## Nicknames: Change these to your appropriate special items.
+nickname yellow stone ring as itemlight
+nickname blue crystal necklace as itemtalk
+nickname black widow keyring as itemkeys
+frimble ## Additional identity lines. Do not edit.
+identify itemlight as lightring
+identify itemtalk as talker
+identify itemkeys as keys
+
+frimble ## Aliases for weapons drawing and sheathing.
+frimble ## Note: Change weapon names appropriately. Need to find a better way to manage this.
+alias dr1 sh0;draw weaponmain;nickname katana as weaponcurrent;
+alias dr2 sh0;draw weaponsecond;nickname wakizashi as weaponcurrent 
+alias dr3 sh0;draw weaponlarge;nickname daggers as weaponcurrent 
+alias dr4 sh0;draw weaponsmall;nickname daggers as weaponcurrent 
+alias dr5 sh0;draw weaponsmall;nickname daggers as weaponcurrent 
+alias dr6 sh0;draw weaponfired;nickname crossbow as weaponcurrent 
+alias dr7 sh0;draw weaponthrown;nickname klatchian throwing knife as weaponcurrent 
+alias sh0 sheathe weaponcurrent;
+alias sh1 sheathe weaponmain in scabbardmain
+alias sh2 sheathe weaponsecond in scabbardsecond
+alias sh3 sheathe weaponlarge in scabbardlarge
+alias sh4 sheathe weaponsmall in scabbardsmall
+alias sh5 sheathe weaponstealth in scabbardstealth
+alias sh6 sheathe weaponfired in scabbardfired
+alias sh7 sheathe weaponthrown in scabbardthrown
+alias set category sh0 Weapons
+alias set category sh1 Weapons
+alias set category sh2 Weapons
+alias set category sh3 Weapons
+alias set category sh4 Weapons
+alias set category sh5 Weapons
+alias set category sh6 Weapons
+alias set category sh7 Weapons
+alias set category dr1 Weapons
+alias set category dr2 Weapons
+alias set category dr3 Weapons
+alias set category dr4 Weapons
+alias set category dr5 Weapons
+alias set category dr6 Weapons
+alias set category dr7 Weapons
