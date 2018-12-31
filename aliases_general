@@ -1,0 +1,71 @@
+frimble #### Alias commands for general client purposes. Do not change. 
+alias parse alias _parsed $*$;_parsed
+alias noalias alias rename $1$ to _$1$; $*$;alias rename _$1$ to $1$
+alias b backward
+alias o out
+alias set category parse Client
+alias set category noalias Client
+alias set category b Client
+alias set category o Client
+
+frimble #### Alias commands for shorthand killing, considering and more. No requirements.
+alias k kill $*$
+alias c consider $arg:me$
+alias ca consider all
+alias ct consider target
+alias cw consider wounded
+alias h health $arg:me$
+alias ha health all
+alias ht health target
+alias hw health wounded
+alias con $ifarg: condition $*$ $else$ condition my all $endif$ sorting up
+alias cona $ifarg: condition $*$ $else$ openall;condition my all & all in my all$endif$ sorting up;closeall;
+alias cond $ifarg: condition $*$ $else$ openall;condition my all & all in my all$endif$ damaged sorting up;closeall;
+alias conc $ifarg: condition $*$ $else$ openall;condition my clothes & clothes in my all$endif$ sorting up;closeall;
+alias conw $ifarg: condition $*$ $else$ openall;condition my weapons & weapons in my all$endif$ sorting up;closeall;
+alias ba bury all
+alias bc bury corpses
+alias set category k General
+alias set category c General
+alias set category ca General
+alias set category ct General
+alias set category cw General
+alias set category h General
+alias set category ha General
+alias set category ht General
+alias set category hw General
+alias set category con General
+alias set category cona General
+alias set category cond General
+alias set category conc General
+alias set category conw General
+alias set category ba General
+alias set category bc General
+
+frimble #### Alias commands for easier tactics commands. No requirements.
+alias focus tactics focus $arg:none$
+alias attitude tactics attitude $arg:neutral$
+alias response tactics response $arg:neutral$
+alias parry tactics response parry $arg:both$
+alias attack tactics response attack $arg:both$
+alias cc concentrate $arg:target 1$
+alias set category focus Tactics
+alias set category attitude Tactics
+alias set category response Tactics
+alias set category parry Tactics
+alias set category attack Tactics
+alias set category cc Tactics
+
+frimble #### Alias commands for travelling options. No requirements.
+alias travelfast options personal travel = journey
+alias travelslow options personal travel = walk
+alias set category travelfast Travel
+alias set category travelslow Travel
+
+frimble #### Alias commands for shorter group commands. No requirements.
+alias gr group report $*$
+alias gs group say $*$
+alias ge group emote $*$
+alias set category gr Groups
+alias set category gs Groups
+alias set category ge Groups
