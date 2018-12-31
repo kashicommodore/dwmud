@@ -1,4 +1,6 @@
-frimble #### Alias commands for 
+frimble #### Please note this file requires a character specific nickname file.
+
+frimble #### Alias commands for generic container manipulations
 alias openall open bagmain&bagloot&pouchmoney&pouchsecret&pouchitems&pouchbelt;
 alias closeall close bagmain&bagloot&pouchmoney&pouchsecret&pouchitems&pouchbelt;
 alias set category openall Containers
