@@ -36,11 +36,11 @@ identify kitcomponents with pouches as component pouch
 
 frimble ## Nicknames: Change these to your appropriate weapons and scabbards.
 nickname katana as weaponmain
-nickname worn sword belt as scabbardmain
+nickname worn sapphire-studded sword belt as scabbardmain
 nickname wakizashi&elegant stiletto as weaponsecond
-nickname worn sword belt&worn oliled leather thigh sheath as scabbardsecond
+nickname worn sapphire-studded sword belt&worn oiled leather thigh sheath as scabbardsecond
 nickname katana as weaponlarge
-nickname worn sword belt as scabbardlarge
+nickname worn sapphire-studded sword belt as scabbardlarge
 nickname daggers as weaponsmall
 nickname worn wolfskin armbands as scabbardsmall
 nickname elegant stiletto as weaponstealth
