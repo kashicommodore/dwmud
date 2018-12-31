@@ -1,0 +1,42 @@
+alias wc warcry $arg:random$
+alias wcr warcry $arg:random$
+alias leeroy warcry LEEEEERRRRRRRRROOOOOYYYYYY JENNNNNKINNNNSSSS!!! 
+alias wc1 warcry Your mother was a hamster and your father smelt of Elderberries!
+alias wc2 warcry For the last time! WE DONT DO DUVETS!
+alias wc3 warcry Nobody expects the Lancrastrian exposition!
+alias wc4 warcry May your earholes turn into bumholes and you soil all over your shoulders!
+alias wc5 warcry By the power of GradeSchool, I HAVE THE CABBAGES!
+alias wc6 warcry I would of been your daddy but the dog got upstairs first!
+alias wc7 warcry Death to the Peoples Front of Genua! Wait... aren't we the peop... nevermind.
+alias wc8 warcry It must be a Thursday, I could never get the hang of Thursdays.
+alias wc9 warcry Thunder, thunder, thunder THUNDERCATS. GOOOOOOOOOOOOOOO!!!!!!!!!
+alias set category wc WarCry
+alias set category wcr WarCry
+alias set category leeroy WarCry
+alias set category wc1 WarCry
+alias set category wc2 WarCry
+alias set category wc3 WarCry
+alias set category wc4 WarCry
+alias set category wc5 WarCry
+alias set category wc6 WarCry
+alias set category wc7 WarCry
+alias set category wc8 WarCry
+alias set category wc9 WarCry
+
+alias .warcries Your mother was a hamster and your father smelt of Elderberries!;For the last time! WE DONT DO DUVETS!;Nobody expects the Lancrastrian exposition!;May your earholes turn into bumholes and you soil all over your shoulders!;By the power of GradeSchool, I HAVE THE CABBAGES!;I would of been your daddy but the dog got upstairs first!;Death to the Peoples Front of Genua! Wait... aren't we the peop... nevermind.;It must be a Thursday, I could never get the hang of Thursdays.;Thunder, thunder, thunder THUNDERCATS. GOOOOOOOOOOOOOOO!!!!!!!!!
+
+alias wk warcry random;kill $*$
+alias wi sheathe weaponcurrent;warcry random;iai $*$ with weaponcurrent
+alias set category wk Warriors
+alias set category wi Warriors
+
+alias guard guard $1$ from $arg2:everyone$
+alias wst stab $arg:target 1$ with weaponcurrent
+alias wsl stab $arg:target 1$ with weaponcurrent
+alias wsta stab $arg:target 1$ with weaponcurrent
+alias wsli slice $arg:target 1$ with weaponcurrent
+alias set category guard Warriors
+alias set category wst Warriors
+alias set category wsl Warriors
+alias set category wsta Warriors
+alias set category wsli Warriors
