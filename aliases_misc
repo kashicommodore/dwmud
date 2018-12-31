@@ -1,3 +1,6 @@
+frimble #### Please note this file requires a character specific nickname file.
+frimble #### Its mainly tailored to myself. Not much use to others, maybe?
+
 frimble #### Alias commands for some misc useful stuff. Requires a yellow stone ring, keyring, a towel, and appropriate containers set up in your nicknames.
 alias superdry get towel from bagquest;dry me with towel;wring towel dry;put towel in bagquest 
 alias lightson get itemlight from pouchitems;wear itemlight
