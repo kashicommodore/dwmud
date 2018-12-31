@@ -1,0 +1,31 @@
+frimble #### Alias commands for looting. These rely on loot nicknames being properly set and having at least 1 bag, preferably a big one!
+alias loot get coinswant&lootvaluables$ifarg:&$*$$endif$ except lootexcept from corpses;$ifarg:put it&them except coins&held weapons&worn in bagloot;$endif$;
+alias lootc get coinswant$ifarg:&$*$$endif$ from corpses except lootexcept ;$ifarg:put it&them except coins&held weapons&worn in bagloot;$endif$;
+alias lootj get coinswant&lootjewellery $ifarg:&$*$ $endif$ except lootexcept from corpses;put it&them except coins&held weapons&worn in bagloot;
+alias lootv get coinswant&lootvaluables $ifarg:&$*$ $endif$ except lootexcept from corpses;put it&them except coins&held weapons&worn in bagloot;
+alias loota get coinswant&all except lootexcept from corpses;put it&them except coins&held weapons&worn in bagloot;
+alias set category loot Looting
+alias set category lootc Looting
+alias set category loota Looting
+alias set category lootv Looting
+alias set category lootj Looting
+
+frimble #### Alias commands for selling loot. These rely on nicknames being properly set.
+alias pawn get $ifarg:$*$ $else$8 things$endif$ from bagloot; sell it&them
+alias pawnc get 8 clothes$ifarg:&$*$$endif$ from bagloot; sell it&them
+alias pawnj get 8 jewellery$ifarg:&$*$$endif$ from bagloot; sell it&them
+alias pawnv get lootvaluables$ifarg:&$*$$endif$ from bagloot; sell it&them
+alias pm look corpses $*$
+alias set category pawn Looting
+alias set category pawnc Looting
+alias set category pawnj Looting
+alias set category pawnv Looting
+alias set category pm Looting
+
+frimble #### Nicknames for looting and selling aliases.
+frimble ## Items to be regarded as 'jewellery'. Works with lootj and pawnj aliases.
+nickname every gold jewellery&every silver jewellery&every copper jewellery&every bronze jewellery&every crystal jewellery as lootjewellery
+frimble ## Items to be regarded as 'valuable'. Works with lootv and pawnv aliases.
+nickname every gold jewellery&every silver jewellery&every copper jewellery&every bronze jewellery&every crystal jewelleryevery ivory jewellery&every platinum jewellery&every belly stone&every hairpin&every silk clothing&every satin clothing&every velvet clothing&every embroidered clothing&every kimono&every auriental dress&every thwab&every guttrah&every thobe&every sensible bag&every djelian dress&every expensive zori&every black leather whip&every dark sunglasses&every hunting knife&every chunky boots&every glasses&every symbols&every amulets&every relics&every books&every pipes& as lootvaluables
+frimble ## Items to be regarded as 'trash'. Items in this list will never be taken as part of any loot aliases.
+nickname shoes&hard leather boots&hob nail boots&cardboard-soled boots&brass jewellery as lootexcept
