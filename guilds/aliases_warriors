@@ -35,8 +35,10 @@ alias wst stab $arg:target 1$ with weaponcurrent
 alias wsl stab $arg:target 1$ with weaponcurrent
 alias wsta stab $arg:target 1$ with weaponcurrent
 alias wsli slice $arg:target 1$ with weaponcurrent
+alias wi sheathe weaponcurrent;warcry random;iai $*$ with weaponcurrent
 alias set category guard Warriors
 alias set category wst Warriors
 alias set category wsl Warriors
 alias set category wsta Warriors
 alias set category wsli Warriors
+alias set category wi Warriors
