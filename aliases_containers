@@ -40,11 +40,25 @@ alias set category pocketc Containers
 alias set category pocketcr Containers
 alias set category pocketcl Containers
 
+
+alias coin $ifarg:put $*$ in pouchmoney $else$ put coinsveryhigh&coinshigh in pouchmoney;put coinsmedium in pouchmoney; $endif$
+alias coins $ifarg:put $*$ in pouchmoney $else$ put coinsveryhigh&coinshigh in pouchmoney;put coinsmedium in pouchmoney; $endif$
+alias coinr $ifarg:take $*$ from pouchmoney $else$ take coins from pouchmoney $endif$
+alias coinl open pouchmoney;look pouchmoney;close pouchmoney $*$
+alias set category coin Containers
+alias set category coins Containers
+alias set category coinr Containers
+alias set category coinl Containers
+
 frimble #### Alias commands for managing upto 2 other pouches.  Requires appropriate pouch nicknames to be set up.
 alias pouch $ifarg:put $*$ in pouchsecret $else$ frimble You need to specify something. $endif$
 alias pouchs $ifarg:put $*$ in pouchsecret $else$ frimble You need to specify something. $endif$
 alias pouchr $ifarg:take $*$ from pouchsecret $else$ frimble You need to specify something. $endif$
 alias pouchl open pouchsecret;look pouchsecret;close pouchsecret
+alias pouchi $ifarg:put $*$ in pouchitems $else$ frimble You need to specify something. $endif$
+alias pouchis $ifarg:put $*$ in pouchitems $else$ frimble You need to specify something. $endif$
+alias pouchir $ifarg:take $*$ from pouchitems $else$ frimble You need to specify something. $endif$
+alias pouchil open pouchitems;look pouchitems;close pouchitems
 alias set category pouch Containers
 alias set category pouchs Containers
 alias set category pouchr Containers
