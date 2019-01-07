@@ -1,5 +1,5 @@
 alias .plan 404
-alias .project EMail: kashicommdore@shadowmesa.net : Twitter/Facebook: Kashicommodore;Some help:https://github.com/kashicommodore/dwmud;Disclaimer: Character is roleplayed as old-fashioned Lancrastrian. He's not racist or sexist etc, but is not politically correct either. Thats not hate, he's just a cultural idiot.
+alias .project EMail: kashicommdore@shadowmesa.net : Twitter/Facebook: Kashicommodore;Some help:https://github.com/kashicommodore/dwmud;
 
 frimble ## Nicknames: Change these to your appropriate bags.
 nickname worn backpack as bagmain
@@ -14,45 +14,45 @@ frimble ## Nicknames: Change these to your appropriate pouches.
 nickname worn small leather neck pouch as pouchmoney
 nickname worn small shoulder pouch 1 as pouchsecret
 nickname worn small shoulder pouch 2 as pouchitems
-nickname worn sturdy leather belt with pouches as pouchbelt
+nickname worn utility belt as pouchbelt
 frimble ## Additional identity lines. Do not edit.
 identify pouchsecret as secret bag
 identify pouchitems as items bag
 identify pouchbelt as utility bag
 
 frimble ## Nicknames: Change these to your appropriate pockets.
-nickname worn black leather trousers as pocketsmain
-nickname worn black leather trousers as pocketcoat
+nickname worn black linen trousers as pocketsmain
+nickname worn long black velvet cloak as pocketcoat
 frimble ## Additional identity lines. Do not edit.
 identify pocketsmain as pocket
 identify pocketscoat as cloak pocket
 
 frimble ## Nicknames: Change these to your appropriate medicine and component containers.
-nickname worn sturdy leather belt with pouches as kitmedicine
-nickname worn sturdy leather belt with pouches as kitcomponents
+nickname worn utility belt as kitmedicine
+nickname worn utility belt as kitcomponents
 frimble ## Additional identity lines. Do not edit. THESE ARE IMPORTANT!
 identify kitmedicine with pouches as medicine bag
 identify kitcomponents with pouches as component pouch
 
 frimble ## Nicknames: Change these to your appropriate weapons and scabbards.
-nickname katana as weaponmain
-nickname worn sapphire-studded sword belt as scabbardmain
-nickname wakizashi&elegant stiletto as weaponsecond
-nickname worn sapphire-studded sword belt&worn oiled leather thigh sheath as scabbardsecond
-nickname katana as weaponlarge
-nickname worn sapphire-studded sword belt as scabbardlarge
-nickname daggers as weaponsmall
-nickname worn wolfskin armbands as scabbardsmall
-nickname elegant stiletto as weaponstealth
+nickname darkened makhaira as weaponmain
+nickname worn moonstone-studded sword belt as scabbardmain
+nickname klatchian steel sabre as weaponsecond
+nickname worn moonstone-studded sword belts as scabbardsecond
+nickname darkened makhaira as weaponlarge
+nickname worn moonstone-studded sword belt as scabbardlarge
+nickname poniards as weaponsmall
+nickname worn black soft-soled boots as scabbardsmall
+nickname stiletto as weaponstealth
 nickname worn oiled leather thigh sheaths as scabbardstealth
 nickname crossbow as weaponfired
 nickname worn bandolier as scabbardfired
-nickname klatchian throwing knife as weaponthrown
+nickname daggers as weaponthrown
 nickname worn knife belt as scabbardthrown
 
 frimble ## Nicknames: Change these to your appropriate special items.
 nickname yellow stone ring as itemlight
-nickname blue crystal necklace as itemtalk
+nickname scarab ring as itemtalk
 nickname keyring as itemkeys
 frimble ## Additional identity lines. Do not edit.
 identify itemlight as lightring
@@ -61,13 +61,13 @@ identify itemkeys as keys
 
 frimble ## Aliases for weapons drawing and sheathing.
 frimble ## Note: Change weapon names appropriately. Need to find a better way to manage this.
-alias dr1 sh0;draw weaponmain from scabbardmain;nickname katana as weaponcurrent;
-alias dr2 sh0;draw weaponsecond from scabbardsecond;nickname wakizashi as weaponcurrent 
-alias dr3 sh0;draw weaponlarge from scabbardlarge;nickname katana as weaponcurrent 
-alias dr4 sh0;draw weaponsmall from scabbardsmall;nickname daggers as weaponcurrent 
-alias dr5 sh0;draw weaponstealth from scabbardstealth;nickname elegant stiletto as weaponcurrent 
+alias dr1 sh0;draw weaponmain from scabbardmain;nickname darkened makhaira as weaponcurrent;
+alias dr2 sh0;draw weaponsecond from scabbardsecond;nickname klatchian steel sabre as weaponcurrent 
+alias dr3 sh0;draw weaponlarge from scabbardlarge;nickname darkened makhaira as weaponcurrent 
+alias dr4 sh0;draw weaponsmall from scabbardsmall;nickname poniards as weaponcurrent 
+alias dr5 sh0;draw weaponstealth from scabbardstealth;nickname stiletto as weaponcurrent 
 alias dr6 sh0;draw weaponfired from scabbardfired;nickname crossbow as weaponcurrent 
-alias dr7 sh0;draw weaponthrown from scabbardthrown;nickname klatchian throwing knife as weaponcurrent 
+alias dr7 sh0;draw weaponthrown from scabbardthrown;nickname daggers as weaponcurrent 
 alias sh0 sheathe weaponcurrent;
 alias sh1 sheathe weaponmain in scabbardmain
 alias sh2 sheathe weaponsecond in scabbardsecond

@@ -5,8 +5,8 @@ frimble #### Alias commands for some misc useful stuff. Requires a yellow stone 
 alias superdry get towel from bagquest;dry me with towel;wring towel dry;put towel in bagquest 
 alias lightson get itemlight from pouchitems;wear itemlight
 alias lightsoff remove itemlight; put itemlight in pouchitems
-alias keysout get itemkeys from pouchitems
-alias keysin put itemkeys in pouchitems
+alias keysout get itemkeys from pocketsmain
+alias keysin put itemkeys in pocketsmain
 alias set category superdry Misc
 alias set category lightson Misc
 alias set category lightsoff Misc
