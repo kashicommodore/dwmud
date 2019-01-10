@@ -1,11 +1,13 @@
 frimble #### Please note this file requires a character specific nickname file.
 
+frimble ##############################################################################################################################
 frimble #### Alias commands for generic container manipulations
 alias openall open bagmain&bagloot&pouchmoney&pouchsecret&pouchitems&pouchbelt;
 alias closeall close bagmain&bagloot&pouchmoney&pouchsecret&pouchitems&pouchbelt;
 alias set category openall Containers
 alias set category closeall Containers
 
+frimble ##############################################################################################################################
 frimble #### Alias commands for managing 2 larger bags, one for loot, one for keeps. Requires appropriate bag nicknames to be set up.
 alias sts $ifarg:put $*$ in bagmain $else$ frimble You need to specify something. $endif$
 alias str $ifarg:take $*$ from bagmain $else$ frimble You need to specify something. $endif$
@@ -26,6 +28,7 @@ alias set category stls Containers
 alias set category stlr Containers
 alias set category stll Containers
 
+frimble ##############################################################################################################################
 frimble #### Alias commands for managing 2 set of pockets (ie: trousers,cloak).  Requires appropriate pocket nicknames to be set up.
 alias pocket $ifarg:put $*$ in pocketsmain $else$ frimble You need to specify something. $endif$
 alias pocketr $ifarg:take $*$ from pocketsmain $else$ frimble You need to specify something. $endif$
@@ -40,7 +43,8 @@ alias set category pocketc Containers
 alias set category pocketcr Containers
 alias set category pocketcl Containers
 
-
+frimble ##############################################################################################################################
+frimble #### Alias commands for managing coin pouch. Works on valauble coins only by default.  Requires appropriate pouch nicknames to be set up.
 alias coin $ifarg:put $*$ in pouchmoney $else$ put coinsveryhigh&coinshigh in pouchmoney;put coinsmedium in pouchmoney; $endif$
 alias coins $ifarg:put $*$ in pouchmoney $else$ put coinsveryhigh&coinshigh in pouchmoney;put coinsmedium in pouchmoney; $endif$
 alias coinr $ifarg:take $*$ from pouchmoney $else$ take coins from pouchmoney $endif$
@@ -50,6 +54,7 @@ alias set category coins Containers
 alias set category coinr Containers
 alias set category coinl Containers
 
+frimble ##############################################################################################################################
 frimble #### Alias commands for managing upto 2 other pouches.  Requires appropriate pouch nicknames to be set up.
 alias pouch $ifarg:put $*$ in pouchsecret $else$ frimble You need to specify something. $endif$
 alias pouchs $ifarg:put $*$ in pouchsecret $else$ frimble You need to specify something. $endif$
@@ -68,6 +73,7 @@ alias set category pouchis Containers
 alias set category pouchir Containers
 alias set category pouchil Containers
 
+frimble ##############################################################################################################################
 frimble #### Alias commands for managing a belt with pouches. Requires appropriate belt nickname to be set up.
 alias belt $ifarg:put $*$ in pouchbelt $else$ frimble You need to specify something. $endif$
 alias belts $ifarg:put $*$ in pouchbelt $else$ frimble You need to specify something. $endif$
@@ -78,7 +84,34 @@ alias set category belts Containers
 alias set category beltr Containers
 alias set category beltl Containers
 
-frimble #### Nicknames for coin aliases.
+frimble ##############################################################################################################################
+frimble #### Alias commands for looting. These rely on loot nicknames being properly set and having at least 1 bag, preferably a big one!
+alias loot get coinswant&lootvaluables$ifarg:&$*$$endif$ except lootexcept from corpses;$ifarg:put it&them except coins&held weapons&worn in bagloot;$endif$;
+alias lootc get coinswant&lootvaluables&lootjewellery&clothes$ifarg:&$*$ $endif$ except lootexcept from corpses ;put it&them except coins&held weapons&worn in bagloot;
+alias lootj get coinswant&lootvaluables&lootjewellery $ifarg:&$*$ $endif$ except lootexcept from corpses;put it&them except coins&held weapons&worn in bagloot;
+alias lootv get coinswant&lootvaluables $ifarg:&$*$ $endif$ except lootexcept from corpses;put it&them except coins&held weapons&worn in bagloot;
+alias loota get coinswant&all except lootexcept from corpses;put it&them except coins&held weapons&worn in bagloot;
+alias set category loot Looting
+alias set category lootc Looting
+alias set category loota Looting
+alias set category lootv Looting
+alias set category lootj Looting
+
+frimble ##############################################################################################################################
+frimble #### Alias commands for selling loot. These rely on nicknames being properly set.
+alias pawn get $ifarg:$*$ $else$8 things$endif$ from bagloot; sell it&them
+alias pawnc get clothes$ifarg:&$*$$endif$ from bagloot; sell it&them
+alias pawnj get jewellery$ifarg:&$*$$endif$ from bagloot; sell it&them
+alias pawnv get lootvaluables$ifarg:&$*$$endif$ from bagloot; sell it&them
+alias pm look corpses $*$
+alias set category pawn Looting
+alias set category pawnc Looting
+alias set category pawnj Looting
+alias set category pawnv Looting
+alias set category pm Looting
+
+frimble ##############################################################################################################################
+frimble #### Nicknames for coins.
 frimble ## Coins regarded as the coins we want (currently all of them)
 nickname every saveloy-rhinu&every quarter-rhinu&every half-rhinu&every rhinu&every ten-rhinu&every fifty-rhinu&every pence&every ten-pence&every half-dollar&every dollar&every ten-dollar&every royal&every ptascp&every talon&every toon&every talent&every ra&every thanra&every derechmus&every hemiobolus&every obolus&every drachma&every stater&every decadrachma&every mina&every tyrant&every cent&every livre&every forin&every ducat&every para&every two para&every five para&every ten para&every fifty para&every dinar&every two dinar&every five dinar&every ten dinar&every fifty dinar&every hundred dinar&every thousand dinar&every toman&every farthing&every penny&every ha'penny&every tuppence&every thruppence&every sixpence&every shilling&every crown&every tencrown&every sovereign&every hedgehog as coinswant
 frimble ## Coins regarded as 'all' coins. Mainly here for reference.
@@ -94,6 +127,7 @@ nickname every ten-pence&every talon&every obolus&every drachma&every five para&
 frimble ## Coins regarded as very low value. (about AM$0.01)
 nickname every saveloy-rhinu&every pence&every ptascp&every derechmus&every hemiobolus&every cent&every para&every two para&every farthing&every penny&every ha'penny&every tuppence as coinsverylow 
 
+frimble ##############################################################################################################################
 frimble #### Nicknames for coins of different currency. Use shorthand terms, not long words!
 nickname agatean coins as coinsag
 nickname morporkian coins as coinsam
@@ -107,3 +141,13 @@ nickname djelain coins as djc
 nickname ephebian coins as epc
 nickname lancre coins as lfc
 nickname genuan coins as gec
+
+frimble ##############################################################################################################################
+frimble #### Nicknames for looting and selling aliases.
+frimble ## Items to be regarded as 'jewellery'. Works with lootj and pawnj aliases.
+nickname every gold jewellery&every silver jewellery&every copper jewellery&every bronze jewellery&every crystal jewellery as lootjewellery
+frimble ## Items to be regarded as 'valuable'. Works with lootv and pawnv aliases.
+nickname every gold jewellery&every silver jewellery&every copper jewellery&every bronze jewellery&every crystal jewelleryevery ivory jewellery&every platinum jewellery&every belly stone&every hairpin&every silk clothing&every satin clothing&every velvet clothing&every embroidered clothing&every kimono&every auriental dress&every thwab&every guttrah&every thobe&every sensible bag&every djelian dress&every expensive zori&every black leather whip&every dark sunglasses&every hunting knife&every chunky boots&every glasses&every symbols&every amulets&every relics&every books&every pipes& as lootvaluables
+frimble ## Items to be regarded as 'trash'. Items in this list will never be taken as part of any loot aliases.
+nickname shoes&hard leather boots&hob nail boots&cardboard-soled boots&brass jewellery&licences as lootexcept
+

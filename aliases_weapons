@@ -1,0 +1,64 @@
+frimble ##############################################################################################################################
+frimble ## Aliases for weapons drawing and sheathing. Requires weapon nicknames to be set up.
+alias dr1 sh;draw weaponmain from scabbardmain;alias sh sheathe weaponmain in scabbardmain;
+alias dr2 sh;draw weaponsecond from scabbardsecond;alias sh sheathe weaponsecond in scabbardsecond;
+alias dr3 sh;draw weaponlarge from scabbardlarge;alias sh sheathe weaponlarge in scabbardlarge;
+alias dr4 sh;draw weaponsmall from scabbardsmall;alias sh sheathe weaponsmall in scabbardsmall;
+alias dr5 sh;draw weaponstealth from scabbardstealth;alias sh sheathe weaponstealth in scabbardstealth;
+alias dr6 sh;draw weaponfired from scabbardfired;alias sh sheathe weaponfired in scabbardfired;
+alias dr7 sh;draw weaponthrown from scabbardthrown;alias sh sheathe weaponthrown in scabbardthrown;
+alias sh sheathe weaponmain in scabbardmain;
+alias sh1 sheathe weaponmain in scabbardmain
+alias sh2 sheathe weaponsecond in scabbardsecond
+alias sh3 sheathe weaponlarge in scabbardlarge
+alias sh4 sheathe weaponsmall in scabbardsmall
+alias sh5 sheathe weaponstealth in scabbardstealth
+alias sh6 sheathe weaponfired in scabbardfired
+alias sh7 sheathe weaponthrown in scabbardthrown
+alias set category sh Weapons
+alias set category sh1 Weapons
+alias set category sh2 Weapons
+alias set category sh3 Weapons
+alias set category sh4 Weapons
+alias set category sh5 Weapons
+alias set category sh6 Weapons
+alias set category sh7 Weapons
+alias set category dr1 Weapons
+alias set category dr2 Weapons
+alias set category dr3 Weapons
+alias set category dr4 Weapons
+alias set category dr5 Weapons
+alias set category dr6 Weapons
+alias set category dr7 Weapons
+
+frimble ##############################################################################################################################
+frimble ## Additional identity lines. Do not edit.
+identify bagloot as loot bag
+identify bagquest as quest bag
+identify bagmoney as money bag
+identify pouchsecret as secret bag
+identify pouchitems as items bag
+identify pouchbelt as utility bag
+identify pocketsmain as pocket
+identify pocketscoat as cloak pocket
+identify itemlight as lightring
+identify itemtalk as talker
+identify itemkeys as keys
+
+identify kitmedicine with pouches as medicine bag
+identify kitcomponents with pouches as component pouch
+
+identify weaponmain as weapon1
+identify scabbardmain as scabbard1
+identify weaponsecond as weapon2
+identify scabbardsecond as scabbard2
+identify weaponlarge as weapon3
+identify scabbardlarge as scabbard3
+identify weaponsmall as weapon4
+identify scabbardsmall as scabbard4
+identify weaponstealth as weapon5
+identify scabbardstealth as scabbard5
+identify weaponfired as weapon6
+identify scabbardfiredas scabbard6
+identify weaponthrown as weapon7
+identify scabbardthrown as scabbard7 

@@ -1,14 +1,26 @@
+frimble ##############################################################################################################################
 frimble #### Alias commands for general client purposes. Do not change. 
+alias afterinventory gp brief;shields;inventory;score brief
+alias wrap cols 154$ifarg:;$*$;unwrap$endif$
+alias unwrap cols 308
 alias parse alias _parsed $*$;_parsed
+alias skills wrap skills $*$
 alias noalias alias rename $1$ to _$1$; $*$;alias rename _$1$ to $1$
 alias b backward
 alias o out
+alias mm map door text
+alias set category afterinventory Client
+alias set category wrap Client
+alias set category unwrap Client
 alias set category parse Client
+alias set category skills Client
 alias set category noalias Client
 alias set category b Client
 alias set category o Client
+alias set category mm Client
 
-frimble #### Alias commands for shorthand killing, considering and more. No requirements.
+frimble ##############################################################################################################################
+frimble #### Alias commands for shorthand killing, considering and more. Requires container nicknames and aliases.
 alias k kill $*$
 alias c consider $arg:me$
 alias ca consider all
@@ -42,6 +54,7 @@ alias set category conw General
 alias set category ba General
 alias set category bc General
 
+frimble ##############################################################################################################################
 frimble #### Alias commands for easier tactics commands. No requirements.
 alias focus tactics focus $arg:none$
 alias attitude tactics attitude $arg:neutral$
@@ -56,16 +69,50 @@ alias set category parry Tactics
 alias set category attack Tactics
 alias set category cc Tactics
 
+frimble ##############################################################################################################################
 frimble #### Alias commands for travelling options. No requirements.
 alias travelfast options personal travel = journey
 alias travelslow options personal travel = walk
 alias set category travelfast Travel
 alias set category travelslow Travel
 
+frimble ##############################################################################################################################
+frimble #### Alias commands for shorter and smarter talker commands. No requirements.
+alias one $ifarg:one $*$else$talker history one$endif$
+alias two $ifarg:two $*$else$talker history two$endif$
+alias igame $ifarg:igame $*$else$talker history igame$endif$
+alias set category one Talkers
+alias set category two Talkers
+alias set category igame Talkers
+
+
+
+frimble ##############################################################################################################################
 frimble #### Alias commands for shorter group commands. No requirements.
-alias gr group report $*$
-alias gs group say $*$
-alias ge group emote $*$
+alias gr group report $*$;
+alias gs group say $*$;
+alias ge group emote $*$;
+alias gh group history;
+alias gl group leader;
+alias gsb group status brief;
+alias gst group status;
+alias gf group follow $arg:all$;
+alias guf group unfollow $arg:all$;group follow $arg:all$;
+alias ga group unassist;group assist;
+alias gua group unassist;
+alias gsh group shield;
 alias set category gr Groups
 alias set category gs Groups
 alias set category ge Groups
+alias set category gh Groups
+alias set category gl Groups
+alias set category gsb Groups
+alias set category gst Groups
+alias set category gf Groups
+alias set category guf Groups
+alias set category ga Groups
+alias set category gua Groups
+alias set category gsh Groups
+
+
+
