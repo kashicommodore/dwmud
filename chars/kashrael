@@ -7,25 +7,25 @@ alias .reference Email: kashicommdore@shadowmesa.net : Twitter/Facebook: Kashico
 describe main looks very much like some sort of brigand, or bandit. All in all, not someone who looks like you want to meet him in a dark alley, or pretty much anywhere for that matter.
 
 describe zone head clear
-describe zone hair His hair is like midnight - black but with a subtle shine of blue as the light hits it.
+describe zone hair His hair is like midnight - black but with a subtle shine of blue as the light hits it. Its shoulder-length, greasy and tangled.
 describe zone eyes $NEW_LINE$His eyes are a deep emerald green, and his stare is somewhat disconcerting.
-describe zone face $NEW_LINE$His face is seemingly locked in a scowl, even when he's not angry. And pale. Too pale. Corpse-like. He even has a blue tinge to his lips.
+describe zone face $NEW_LINE$He is the type to seemingly be locked in a scowl, even when he's not angry. And pale. Too pale. Corpse-like. He even has a blue tinge to his lips.
 describe zone neck His neck has a strange scar across it. Or is it a bruise?
-describe zone arms His arms are athletic, muscular but not rippling. A selection of faded tattoos adorn them.
-describe zone legs His legs are athletic, muscular but not rippling.
+describe zone arms His bare arms are athletic, muscular but not rippling. A selection of faded tattoos adorn them.
+describe zone legs His bare legs look strong and firm. They sport a few scars. The hairline seems to suggest he rides a horse regularly.
 describe zone hands His hands have a patchwork of scars and cuts across them, a hazard of his profession no doubt.
 describe zone feet He has rather large feet.
 describe zone back clear
-describe zone chest $NEW_LINE$He's quite slim built, torso-wise. And again, you notice just how pale his skin is.
+describe zone chest $NEW_LINE$He's quite slim built, torso-wise. You can just about see his ribs. And again, you notice just how pale his skin is.
 describe zone abdomen clear
 
 describe zone covered head clear
-describe zone covered hair His hair is covered, but little stray stands are very dark, and have a blue sheen in the light.
-describe zone covered eyes clear
-describe zone covered face $NEW_LINE$What little you can see of his face is pale. Very pale.
+describe zone covered hair His hair is covered, but a few little stray stands are very dark, and have a blue sheen in the light.
+describe zone covered eyes You cannot see his eyes.
+describe zone covered face $NEW_LINE$What little you can see of his face is pale. Too pale.
 describe zone covered neck clear
-describe zone covered arms On his arms are an arrangement of sheathes and pockets, most of them filled. They are althetic but muscular.
-describe zone covered legs On his legs are another selection of sheathes, pockets and scabbards.
+describe zone covered arms On his arms are an arrangement of sheathes and pockets, most of them filled. They are athletic but muscular.
+describe zone covered legs On his legs are another selection of sheathes, pockets and scabbards. His trousers seem to be one size too large.
 describe zone covered hands clear
 describe zone covered feet From the size of his boots, you notice he has rather large feet.
 describe zone covered back clear

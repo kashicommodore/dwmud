@@ -85,8 +85,6 @@ alias set category one Talkers
 alias set category two Talkers
 alias set category igame Talkers
 
-
-
 frimble ##############################################################################################################################
 frimble #### Alias commands for shorter group commands. No requirements.
 alias gr group report $*$;
