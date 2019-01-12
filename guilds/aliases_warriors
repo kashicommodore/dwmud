@@ -33,7 +33,7 @@ alias wst stab $arg:target 1$ with held weapon 1
 alias wsl stab $arg:target 1$ with held weapon 1
 alias wsta stab $arg:target 1$ with held weapon 1
 alias wsli slice $arg:target 1$ with held weapon 1
-alias wi sheathe weapon 1;warcry random;iai $*$ with held weapon 1
+alias wi sheathe katana;warcry random;iai $*$ with katana
 alias set category guard Warriors
 alias set category wst Warriors
 alias set category wsl Warriors

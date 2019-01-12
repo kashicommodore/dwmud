@@ -2,7 +2,7 @@ frimble ########################################################################
 frimble #### Alias commands for general client purposes. Do not change. 
 alias afterinventory gp brief;shields;inventory;score brief
 alias wrap cols 154$ifarg:;$*$;unwrap$endif$
-alias unwrap cols 308
+alias unwrap cols 154
 alias parse alias _parsed $*$;_parsed
 alias skills wrap skills $*$
 alias noalias alias rename $1$ to _$1$; $*$;alias rename _$1$ to $1$

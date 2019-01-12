@@ -1,0 +1,79 @@
+alias .plan None
+
+alias .project None
+
+alias .reference None
+
+describe main clear
+
+describe zone head clear
+describe zone hair clear
+describe zone eyes clear
+describe zone face clear
+describe zone neck clear
+describe zone arms clear
+describe zone legs clear
+describe zone hands clear
+describe zone feet clear
+describe zone back clear
+describe zone chest clear
+describe zone abdomen clear
+
+describe zone covered head clear
+describe zone covered hair clear
+describe zone covered eyes clear
+describe zone covered face clear
+describe zone covered neck clear
+describe zone covered arms clear
+describe zone covered legs clear
+describe zone covered hands clear
+describe zone covered feet clear
+describe zone covered back clear
+describe zone covered chest clear
+describe zone covered abdomen clear
+
+
+frimble ## Nicknames: Change these to your appropriate bags.
+nickname worn backpack as bagmain
+nickname worn backpack as bagloot
+nickname worn close-fitting black leather bag as bagquest
+
+frimble ## Nicknames: Change these to your appropriate pouches.
+nickname worn small leather neck pouch as pouchmoney
+nickname worn small shoulder pouch 1 as pouchsecret
+nickname worn small shoulder pouch 1 as pouchitems
+nickname worn close-fitting black leather bag as pouchbelt
+
+frimble ## Nicknames: Change these to your appropriate pockets.
+nickname worn black ninja trousers as pocketsmain
+nickname worn black trenchcoat as pocketscoat
+
+frimble ## Nicknames: Change these to your appropriate medicine and component containers.
+nickname worn close-fitting black leather bag as kitmedicine
+nickname worn close-fitting black leather bag as kitcomponents
+
+frimble ## Nicknames: Change these to your appropriate special items.
+nickname silver ring as itemlight
+nickname silver ring as itemtalk
+nickname keyring as itemkeys
+
+frimble ## Nicknames: Change these to your appropriate weapons and scabbards.
+nickname jianns as weaponmain
+nickname worn sapphire-studded sword belt as scabbardmain
+nickname ornamental butterfly dagger as weaponsecond
+nickname worn oiled leather thigh sheath as scabbardsecond
+nickname jianns as weaponlarge
+nickname worn sapphire-studded sword belt as scabbardlarge
+nickname daggers as weaponsmall
+nickname worn black soft-soled boots as scabbardsmall
+nickname ornamental butterfly dagger as weaponstealth
+nickname worn oiled leather thigh sheath as scabbardstealth
+nickname crossbow as weaponfired
+nickname worn bandolier as scabbardfired
+nickname daggers as weaponthrown
+nickname worn black soft-soled boots as scabbardthrown
+
+alias thi $ifarg:thieves $*$else$talker history warriors$endif$
+alias hat $ifarg:hat $*$else$talker history sek$endif$
+alias set category thi Talkers
+alias set category hat Talkers
