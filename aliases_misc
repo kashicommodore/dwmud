@@ -15,18 +15,18 @@ alias set category keysout Misc
 alias set category keysin Misc
 
 frimble ##############################################################################################################################
-alias page $ifarg:turn to page $*$ of book$else$turn page in book$endif$;read book
+frimble #### Handy alias for dealing with books.
+alias page $ifarg:turn to page $1$ of book$else$turn page in book$endif$;read book
 alias set category page Misc
 
 frimble ##############################################################################################################################
-alias langprimer open book;speak agatean;turn book to page 7;read book;turn book to page 8;read book;turn book to page 9;read book;speak brindisian;turn book to page 10;read book;turn book to page 11;read book;turn book to page 12;read book;speak djelian;turn book to page 13;read book;turn book to page 14;read book;turn book to page 15;read book;speak ephebian;turn book to page 16;read book;turn book to page 17;read book;turn book to page 18;read book;speak klatchian;turn book to page 19;read book;turn book to page 20;read book;turn book to page 21;read book;speak uberwaldean;turn book to page 25;read book;turn book to page 26;read book;turn book to page 27;read book;speak morporkian;close book;
-alias set category langprimer Misc
-
-frimble ##############################################################################################################################
+frimble #### Yes, I'm a t-shop spotter
 alias tshop Tshop_Spotters talk 
 alias set category tshop Groups
 
-
 frimble ##############################################################################################################################
-alias kalang open book;speak agatean;turn book to page 7;read book;turn book to page 8;read book;turn book to page 9;read book;speak djelian;turn book to page 13;read book;turn book to page 14;read book;turn book to page 15;read book;speak ephebian;turn book to page 16;read book;turn book to page 17;read book;turn book to page 18;read book;speak morporkian;close book;
+frimble #### Handy for lang primer books.
+alias langprimer open book;speak agatean;turn book to page 7;read book;turn book to page 8;read book;turn book to page 9;read book;speak brindisian;turn book to page 10;read book;turn book to page 11;read book;turn book to page 12;read book;speak djelian;turn book to page 13;read book;turn book to page 14;read book;turn book to page 15;read book;speak ephebian;turn book to page 16;read book;turn book to page 17;read book;turn book to page 18;read book;speak klatchian;turn book to page 19;read book;turn book to page 20;read book;turn book to page 21;read book;speak uberwaldean;turn book to page 25;read book;turn book to page 26;read book;turn book to page 27;read book;speak morporkian;close book;
 alias set category langprimer Misc
+
+
