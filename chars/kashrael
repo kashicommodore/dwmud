@@ -32,25 +32,21 @@ describe zone covered back clear
 describe zone covered chest $NEW_LINE$His body is covered in far too much leather, mostly black, accessorised with many sharp pointy things and splashed with dried blood. 
 describe zone covered abdomen clear
 
-
 frimble ## Nicknames: Change these to your appropriate bags.
 nickname worn backpack as bagmain
 nickname worn backpack as bagloot
 nickname worn satchel as bagquest
-
 frimble ## Nicknames: Change these to your appropriate pouches.
 nickname worn small leather neck pouch as pouchmoney
 nickname worn small shoulder pouch 1 as pouchsecret
-nickname worn small shoulder pouch 2 as pouchitems
-nickname worn sturdy leather belt with pouches as pouchbelt
-
+nickname worn utility belt as pouchbelt
 frimble ## Nicknames: Change these to your appropriate pockets.
 nickname worn blood red cloak as pocketsmain
 nickname worn blood red cloak as pocketscoat
 
 frimble ## Nicknames: Change these to your appropriate medicine and component containers.
-nickname worn sturdy leather belt with pouches as kitmedicine
-nickname worn sturdy leather belt with pouches as kitcomponents
+nickname worn utility belt as kitmedicine
+nickname worn utility belt as kitcomponents
 
 frimble ## Nicknames: Change these to your appropriate special items.
 nickname yellow stone ring as itemlight
@@ -58,20 +54,22 @@ nickname blue crystal necklace as itemtalk
 nickname keyring as itemkeys
 
 frimble ## Nicknames: Change these to your appropriate weapons and scabbards.
-nickname katana as weaponmain
+nickname diamondback sky katana as weaponmain
 nickname worn sapphire-studded sword belt as scabbardmain
-nickname wakizashi&elegant stiletto as weaponsecond
-nickname worn sapphire-studded sword belt&worn oiled leather thigh sheath as scabbardsecond
-nickname katana as weaponlarge
-nickname worn sapphire-studded sword belt as scabbardlarge
-nickname daggers as weaponsmall
-nickname worn wolfskin armbands as scabbardsmall
-nickname elegant stiletto as weaponstealth
-nickname worn oiled leather thigh sheaths as scabbardstealth
+nickname wakizashi as weaponsecond
+nickname worn sapphire-studded sword belt as scabbardsecond
+nickname black shafted mace as weaponblunt
+nickname worn belt loop as scabbardblunt
+nickname diamondback sky katana as weaponsharp
+nickname worn sapphire-studded sword belt as scabbardsharp
+nickname crystal-bladed daggers as weaponsmall
+nickname worn oiled leather thigh sheaths as scabbardsmall
 nickname crossbow as weaponfired
 nickname worn bandolier as scabbardfired
 nickname klatchian throwing knife as weaponthrown
 nickname worn knife belt as scabbardthrown
+nickname elegant stiletto as weaponstealth
+nickname worn wolfskin armbands as scabbardstealth
 
 alias war $ifarg:warriors $*$else$talker history warriors$endif$
 alias wmc $ifarg:weaponmaster'scourt $*$else$talker history weaponmaster'scourt$endif$
@@ -79,3 +77,7 @@ alias sek $ifarg:sek $*$else$talker history sek$endif$
 alias set category war Talkers
 alias set category wmc Talkers
 alias set category sek Talkers
+
+frimble ##############################################################################################################################
+alias langprimerk open book;speak agatean;turn book to page 7;read book;turn book to page 8;read book;turn book to page 9;read book;speak djelian;turn book to page 13;read book;turn book to page 14;read book;turn book to page 15;read book;speak ephebian;turn book to page 16;read book;turn book to page 17;read book;turn book to page 18;read book;speak morporkian;close book;
+alias set category langprimerk Misc
