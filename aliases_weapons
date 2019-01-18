@@ -9,29 +9,35 @@ alias d6 sh;draw weaponfired from scabbardfired;alias sh sheathe weaponfired in 
 alias d7 sh;draw weaponthrown from scabbardthrown;alias sh sheathe weaponthrown in scabbardthrown;
 alias d0 sh;draw weaponstealth from scabbardstealth;alias sh sheathe weaponstealth in scabbardstealth;
 alias sh sheathe weaponmain in scabbardmain;
-alias sh1 sheathe weaponmain in scabbardmain
-alias sh2 sheathe weaponsecond in scabbardsecond
-alias sh3 sheathe weaponblunt in scabbardblunt
-alias sh4 sheathe weaponsharp in scabbardsharp
-alias sh5 sheathe weaponsmall in scabbardsmall
-alias sh6 sheathe weaponfired in scabbardfired
-alias sh7 sheathe weaponthrown in scabbardthrown
-alias sh0 sheathe weaponstealth in scabbardstealth
+alias s1 sheathe weaponmain in scabbardmain
+alias s2 sheathe weaponsecond in scabbardsecond
+alias s3 sheathe weaponblunt in scabbardblunt
+alias s4 sheathe weaponsharp in scabbardsharp
+alias s5 sheathe weaponsmall in scabbardsmall
+alias s6 sheathe weaponfired in scabbardfired
+alias s7 sheathe weaponthrown in scabbardthrown
+alias s0 sheathe weaponstealth in scabbardstealth
 alias set category sh Weapons
-alias set category sh1 Weapons
-alias set category sh2 Weapons
-alias set category sh3 Weapons
-alias set category sh4 Weapons
-alias set category sh5 Weapons
-alias set category sh6 Weapons
-alias set category sh7 Weapons
-alias set category dr1 Weapons
-alias set category dr2 Weapons
-alias set category dr3 Weapons
-alias set category dr4 Weapons
-alias set category dr5 Weapons
-alias set category dr6 Weapons
-alias set category dr7 Weapons
+alias set category s1 Weapons
+alias set category s2 Weapons
+alias set category s3 Weapons
+alias set category s4 Weapons
+alias set category s5 Weapons
+alias set category s6 Weapons
+alias set category s7 Weapons
+alias set category s0 Weapons
+alias set category d1 Weapons
+alias set category d2 Weapons
+alias set category d3 Weapons
+alias set category d4 Weapons
+alias set category d5 Weapons
+alias set category d6 Weapons
+alias set category d7 Weapons
+alias set category d0 Weapons
+
+
+alias setupidents identify bagloot as loot bag;identify bagquest as quest bag;identify bagmoney as money bag;identify pouchsecret as secret bag;identify pouchbelt as utility bag;identify pocketsmain as pocket;identify pocketscoat as cloak pocket;identify itemlight as lightring;identify itemtalk as talker;identify itemkeys as keys;identify kitmedicine as medicine bag;identify kitcomponents as component pouch;identify weaponmain as weapon1;identify scabbardmain as scabbard1;identify weaponsecond as weapon2;identify scabbardsecond as scabbard2;identify weaponblunt as weapon3;identify scabbardblunt as scabbard3;identify weaponsharp as weapon4;identify scabbardsharp as scabbard4;identify weaponsmall as weapon5;identify scabbardsmall as scabbard5;identify weaponfired as weapon6;identify scabbardfiredas scabbard6;identify weaponthrown as weapon7;identify scabbardthrown as scabbard7;identify weaponstealth as weapon0;identify scabbardstealth as scabbard0;
+alias set category setupidents Config
 
 frimble ##############################################################################################################################
 frimble ## Additional identity lines. Do not edit.
