@@ -29,11 +29,16 @@ alias wk warcry random;kill $*$
 alias set category wk Warriors
 
 alias guard guard $1$ from $arg2:everyone$
-alias wst stab $arg:target 1$ with held weapon 1
-alias wsl stab $arg:target 1$ with held weapon 1
 alias wsta stab $arg:target 1$ with held weapon 1
 alias wsli slice $arg:target 1$ with held weapon 1
+alias wsma smash $arg:target 1$ with held weapon 1
+
 alias wi sheathe katana;warcry random;iai $*$ with katana
+
+alias wcr crush $arg:target 1$ with held weapon 1
+alias wbh behead $arg:target 1$ with held weapon 1
+alias wim imaple $arg:target 1$ with held weapon 1
+
 alias set category guard Warriors
 alias set category wst Warriors
 alias set category wsl Warriors
