@@ -1,4 +1,4 @@
-frimble #### Nicknames for looting and selling aliases.
+frimble #### Nicknames for loot
 
 frimble ## Items to be regarded as 'jewellery'. Works with lootj and pawnj aliases.
 nickname every gold jewellery&every silver jewellery&every copper jewellery&every bronze jewellery&every crystal jewellery&every ivory jewellery&every platinum jewellery&every belly stone&every hairpin as lootjewellery
