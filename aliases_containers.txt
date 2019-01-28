@@ -2,10 +2,25 @@ frimble #### Please note this file requires a character specific nickname file.
 
 frimble ##############################################################################################################################
 frimble #### Alias commands for generic container manipulations
-alias openall open bagmain&bagloot&pouchmoney&pouchsecret&pouchitems&pouchbelt;
-alias closeall close bagmain&bagloot&pouchmoney&pouchsecret&pouchitems&pouchbelt;
+alias openall open bagloot&bagquest&pouchmoney&pouchitems&pouchbelt;
 alias set category openall Containers
+alias closeall close bagloot&bagquest&pouchmoney&pouchitems&pouchbelt;
 alias set category closeall Containers
+alias opeanall2 open bagquest&pouchmoney&pouchitems&pouchbelt;
+alias set category openall Containers
+alias closeall2 close bagquest&pouchmoney&pouchitems&pouchbelt;
+alias set category closeall Containers
+
+alias con $ifarg: condition $*$ $else$ condition my all $endif$ sorting up
+alias set category con Containers
+alias cona $ifarg: condition $*$ $else$ openall2;condition my all & all in my all$endif$ sorting up;closeall2;
+alias set category cona Containers
+alias cond $ifarg: condition $*$ $else$ openall2;condition my all & all in my all$endif$ damaged sorting up;closeall2;
+alias set category cond Containers
+alias conc $ifarg: condition $*$ $else$ openall2;condition my clothes & clothes in my all$endif$ sorting up;closeall2;
+alias set category conc Containers
+alias conw $ifarg: condition $*$ $else$ openall2;condition my weapons & weapons in my all$endif$ sorting up;closeall2;
+alias set category conw Containers
 
 frimble ##############################################################################################################################
 frimble #### Alias commands for managing 2 larger bags, one for loot, one for keeps. Requires appropriate bag nicknames to be set up.
@@ -102,37 +117,7 @@ alias set category pawnj Looting
 alias set category pawnv Looting
 alias set category pm Looting
 
-frimble ##############################################################################################################################
-frimble #### Nicknames for coins.
-frimble ## Coins regarded as the coins we want (currently all of them)
-nickname every saveloy-rhinu&every quarter-rhinu&every half-rhinu&every rhinu&every ten-rhinu&every fifty-rhinu&every pence&every ten-pence&every half-dollar&every dollar&every ten-dollar&every royal&every ptascp&every talon&every toon&every talent&every ra&every thanra&every derechmus&every hemiobolus&every obolus&every drachma&every stater&every decadrachma&every mina&every tyrant&every cent&every livre&every forin&every ducat&every para&every two para&every five para&every ten para&every fifty para&every dinar&every two dinar&every five dinar&every ten dinar&every fifty dinar&every hundred dinar&every thousand dinar&every toman&every farthing&every penny&every ha'penny&every tuppence&every thruppence&every sixpence&every shilling&every crown&every tencrown&every sovereign&every hedgehog as coinswant
-frimble ## Coins regarded as 'all' coins. Mainly here for reference.
-nickname every saveloy-rhinu&every quarter-rhinu&every half-rhinu&every rhinu&every ten-rhinu&every fifty-rhinu&every pence&every ten-pence&every half-dollar&every dollar&every ten-dollar&every royal&every ptascp&every talon&every toon&every talent&every ra&every thanra&every derechmus&every hemiobolus&every obolus&every drachma&every stater&every decadrachma&every mina&every tyrant&every cent&every livre&every forin&every ducat&every para&every two para&every five para&every ten para&every fifty para&every dinar&every two dinar&every five dinar&every ten dinar&every fifty dinar&every hundred dinar&every thousand dinar&every toman&every farthing&every penny&every ha'penny&every tuppence&every thruppence&every sixpence&every shilling&every crown&every tencrown&every sovereign&every hedgehog as coinsall
-frimble ## Coins regarded as very high value. (about AM$100.00)
-nickname every fifty-rhinu&every royal&every ra&every thanra&every tyrant&every ducat&every fifty dinar&every hundred dinar&every thousand dinar&every toman&every tencrown&every sovereign&every hedgehog as coinsveryhigh 
-frimble ## Coins regarded as high value. (about AM$10.00)
-nickname every ten-rhinu&every ten-dollar&every talent&every mina&every forin&every five dinar&every ten dinar&every crown as coinshigh 
-frimble ## Coins regarded as medium value. (about AM$1.00)
-nickname every quarter-rhinu&every half-rhinu&every rhinu&every half-dollar&every dollar&every toon&every stater&every decadrachma&every livre&every fifty para&every dinar&every two dinar&every shilling as coinsmedium 
-frimble ## Coins regarded as low value. (about AM$0.10)
-nickname every ten-pence&every talon&every obolus&every drachma&every five para&every ten para&every thruppence&every sixpence as coinslow
-frimble ## Coins regarded as very low value. (about AM$0.01)
-nickname every saveloy-rhinu&every pence&every ptascp&every derechmus&every hemiobolus&every cent&every para&every two para&every farthing&every penny&every ha'penny&every tuppence as coinsverylow 
 
-frimble ##############################################################################################################################
-frimble #### Nicknames for coins of different currency. Use shorthand terms, not long words!
-nickname agatean coins as coinsag
-nickname morporkian coins as coinsam
-nickname djelain coins as coinsdj
-nickname ephebian coins as coinsep
-nickname lancre coins as coinsla
-nickname genuan coins as coinsge
-nickname agatean coins as agc
-nickname morporkian coins as amc
-nickname djelain coins as djc
-nickname ephebian coins as epc
-nickname lancre coins as lfc
-nickname genuan coins as gec
 
 frimble ##############################################################################################################################
 frimble #### Nicknames for looting and selling aliases.
