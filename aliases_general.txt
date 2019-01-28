@@ -1,26 +1,5 @@
 frimble ##############################################################################################################################
-frimble #### Alias commands for general client purposes. Do not change. 
-alias afterinventory gp brief;shields;inventory;score brief
-alias wrap cols 154$ifarg:;$*$;unwrap$endif$
-alias unwrap cols 154
-alias parse alias _parsed $*$;_parsed
-alias skills wrap skills $*$
-alias noalias alias rename $1$ to _$1$; $*$;alias rename _$1$ to $1$
-alias b backward
-alias o out
-alias mm map door text
-alias set category afterinventory Client
-alias set category wrap Client
-alias set category unwrap Client
-alias set category parse Client
-alias set category skills Client
-alias set category noalias Client
-alias set category b Client
-alias set category o Client
-alias set category mm Client
-
-frimble ##############################################################################################################################
-frimble #### Alias commands for shorthand killing, considering and more. Requires container nicknames and aliases.
+frimble #### Alias commands for shorthand killing, considering and more. Useful to everyone. No requirements.
 alias k kill $*$
 alias c consider $arg:me$
 alias ca consider all
@@ -37,6 +16,8 @@ alias conc $ifarg: condition $*$ $else$ openall;condition my clothes & clothes i
 alias conw $ifarg: condition $*$ $else$ openall;condition my weapons & weapons in my all$endif$ sorting up;closeall;
 alias ba bury all
 alias bc bury corpses
+alias b backward
+alias o out
 alias set category k General
 alias set category c General
 alias set category ca General
@@ -53,6 +34,8 @@ alias set category conc General
 alias set category conw General
 alias set category ba General
 alias set category bc General
+alias set category b General
+alias set category o General
 
 frimble ##############################################################################################################################
 frimble #### Alias commands for easier tactics commands. No requirements.
@@ -77,13 +60,17 @@ alias set category travelfast Travel
 alias set category travelslow Travel
 
 frimble ##############################################################################################################################
-frimble #### Alias commands for shorter and smarter talker commands. No requirements.
+frimble #### Alias commands for shorter and smarter talker commands. No requirements. Guild/God specific channels are elsewhere.
 alias one $ifarg:one $*$else$talker history one$endif$
 alias two $ifarg:two $*$else$talker history two$endif$
+alias quiz $ifarg:two $*$else$talker history quiz$endif$
 alias igame $ifarg:igame $*$else$talker history igame$endif$
+alias inews $ifarg:igame $*$else$talker history inews$endif$
 alias set category one Talkers
 alias set category two Talkers
+alias set category quiz Talkers
 alias set category igame Talkers
+alias set category inews Talkers
 
 frimble ##############################################################################################################################
 frimble #### Alias commands for shorter group commands. No requirements.
@@ -96,8 +83,8 @@ alias gsb group status brief;
 alias gst group status;
 alias gf group follow $arg:all$;
 alias guf group unfollow $arg:all$;group follow $arg:all$;
-alias ga group unassist;group assist;
-alias gua group unassist;
+alias ga group unassist all;group assist $*$;
+alias gua group unassist $arg:all$;
 alias gsh group shield;
 alias set category gr Groups
 alias set category gs Groups

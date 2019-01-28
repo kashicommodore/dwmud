@@ -1,0 +1,16 @@
+frimble ##############################################################################################################################
+frimble #### Alias commands for general client purposes. I find these useful. Some help with the MUD clients I use.
+alias afterinventory gp brief;shields;inventory;score brief
+alias wrap cols 154$ifarg:;$*$;unwrap$endif$
+alias unwrap cols 154
+alias parse alias _parsed $*$;_parsed
+alias skills wrap skills $*$
+alias noalias alias rename $1$ to _$1$; $*$;alias rename _$1$ to $1$
+alias mm map door text
+alias set category afterinventory Client
+alias set category wrap Client
+alias set category unwrap Client
+alias set category parse Client
+alias set category skills Client
+alias set category noalias Client
+alias set category mm Client
