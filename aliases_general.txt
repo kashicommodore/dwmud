@@ -1,14 +1,24 @@
 frimble ##############################################################################################################################
 frimble #### Alias commands for shorthand killing, considering and more. Useful to everyone. No requirements.
 alias k kill $*$
-alias c consider $arg:me$
+alias set category k General
+alias c consider $arg:all$
+alias set category c General
 alias ca consider all
+alias set category ca General
 alias ct consider target
+alias set category ct General
 alias cw consider wounded
+alias set category cw General
 alias h health $arg:me$
+alias set category h General
 alias ha health all
+alias set category ha General
 alias ht health target
+alias set category ht General
 alias hw health wounded
+alias set category hw General
+
 alias con $ifarg: condition $*$ $else$ condition my all $endif$ sorting up
 alias cona $ifarg: condition $*$ $else$ openall;condition my all & all in my all$endif$ sorting up;closeall;
 alias cond $ifarg: condition $*$ $else$ openall;condition my all & all in my all$endif$ damaged sorting up;closeall;
@@ -18,15 +28,7 @@ alias ba bury all
 alias bc bury corpses
 alias b backward
 alias o out
-alias set category k General
-alias set category c General
-alias set category ca General
-alias set category ct General
-alias set category cw General
-alias set category h General
-alias set category ha General
-alias set category ht General
-alias set category hw General
+
 alias set category con General
 alias set category cona General
 alias set category cond General
