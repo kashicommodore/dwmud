@@ -1,4 +1,3 @@
-frimble ##############################################################################################################################
 frimble #### Alias commands for shorthand killing, considering and more. Useful to everyone. No requirements.
 alias k kill $*$
 alias set category k General
@@ -18,87 +17,71 @@ alias ht health target
 alias set category ht General
 alias hw health wounded
 alias set category hw General
-
-alias con $ifarg: condition $*$ $else$ condition my all $endif$ sorting up
-alias cona $ifarg: condition $*$ $else$ openall;condition my all & all in my all$endif$ sorting up;closeall;
-alias cond $ifarg: condition $*$ $else$ openall;condition my all & all in my all$endif$ damaged sorting up;closeall;
-alias conc $ifarg: condition $*$ $else$ openall;condition my clothes & clothes in my all$endif$ sorting up;closeall;
-alias conw $ifarg: condition $*$ $else$ openall;condition my weapons & weapons in my all$endif$ sorting up;closeall;
 alias ba bury all
-alias bc bury corpses
-alias b backward
-alias o out
-
-alias set category con General
-alias set category cona General
-alias set category cond General
-alias set category conc General
-alias set category conw General
 alias set category ba General
+alias bc bury corpses
 alias set category bc General
+alias b backward
 alias set category b General
+alias o out
 alias set category o General
 
-frimble ##############################################################################################################################
 frimble #### Alias commands for easier tactics commands. No requirements.
 alias focus tactics focus $arg:none$
-alias attitude tactics attitude $arg:neutral$
-alias response tactics response $arg:neutral$
-alias parry tactics response parry $arg:both$
-alias attack tactics response attack $arg:both$
-alias cc concentrate $arg:target 1$
 alias set category focus Tactics
+alias attitude tactics attitude $arg:neutral$
 alias set category attitude Tactics
+alias response tactics response $arg:neutral$
 alias set category response Tactics
+alias parry tactics response parry $arg:both$
 alias set category parry Tactics
+alias attack tactics response attack $arg:both$
 alias set category attack Tactics
+alias cc concentrate $arg:target 1$
 alias set category cc Tactics
 
-frimble ##############################################################################################################################
 frimble #### Alias commands for travelling options. No requirements.
 alias travelfast options personal travel = journey
-alias travelslow options personal travel = walk
 alias set category travelfast Travel
+alias travelslow options personal travel = walk
 alias set category travelslow Travel
 
-frimble ##############################################################################################################################
 frimble #### Alias commands for shorter and smarter talker commands. No requirements. Guild/God specific channels are elsewhere.
 alias one $ifarg:one $*$else$talker history one$endif$
-alias two $ifarg:two $*$else$talker history two$endif$
-alias quiz $ifarg:two $*$else$talker history quiz$endif$
-alias igame $ifarg:igame $*$else$talker history igame$endif$
-alias inews $ifarg:igame $*$else$talker history inews$endif$
 alias set category one Talkers
+alias two $ifarg:two $*$else$talker history two$endif$
 alias set category two Talkers
+alias quiz $ifarg:two $*$else$talker history quiz$endif$
 alias set category quiz Talkers
+alias igame $ifarg:igame $*$else$talker history igame$endif$
 alias set category igame Talkers
+alias inews $ifarg:igame $*$else$talker history inews$endif$
 alias set category inews Talkers
 
-frimble ##############################################################################################################################
 frimble #### Alias commands for shorter group commands. No requirements.
 alias gr group report $*$;
-alias gs group say $*$;
-alias ge group emote $*$;
-alias gh group history;
-alias gl group leader;
-alias gsb group status brief;
-alias gst group status;
-alias gf group follow $arg:all$;
-alias guf group unfollow $arg:all$;group follow $arg:all$;
-alias ga group unassist all;group assist $*$;
-alias gua group unassist $arg:all$;
-alias gsh group shield;
 alias set category gr Groups
+alias gs group say $*$;
 alias set category gs Groups
+alias ge group emote $*$;
 alias set category ge Groups
+alias gh group history;
 alias set category gh Groups
+alias gl group leader;
 alias set category gl Groups
+alias gsb group status brief;
 alias set category gsb Groups
+alias gst group status;
 alias set category gst Groups
+alias gf group follow $arg:all$;
 alias set category gf Groups
+alias guf group unfollow $arg:all$;group follow $arg:all$;
 alias set category guf Groups
+alias ga group unassist all;group assist $*$;
 alias set category ga Groups
+alias gua group unassist $arg:all$;
 alias set category gua Groups
+alias gsh group shield;
 alias set category gsh Groups
 
 
