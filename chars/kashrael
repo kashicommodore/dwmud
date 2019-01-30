@@ -1,6 +1,6 @@
 alias .plan Guild Maxing
 
-alias .project Not sure yet.
+alias .project [UninspiredName] Kashrael: Scotland, Highlands.;[UninspiredName] Avric stops assisting you. $*$
 
 alias .reference Email: kashicommdore@shadowmesa.net : Twitter/Facebook: Kashicommodore;Discworld Stuff:https://github.com/kashicommodore/dwmud;.;Disclaimer: Character is roleplayed as old-fashioned Lancrastrian. He's not racist or sexist etc, but is not politically correct either. Thats not hateplay, he's just a cultural idiot. 
 
@@ -33,34 +33,32 @@ describe zone covered chest $NEW_LINE$His body is covered in far too much leathe
 describe zone covered abdomen clear
 
 frimble ## Nicknames: Change these to your appropriate bags.
-nickname worn backpack as bagmain
-nickname worn backpack as bagloot
-nickname worn satchel as bagquest
+nickname worn black backpack as bagmain
+nickname worn black backpack as bagloot
+nickname worn close-fitting black leather bag as bagquest
 frimble ## Nicknames: Change these to your appropriate pouches.
 nickname worn small leather neck pouch as pouchmoney
-nickname worn small shoulder pouch 1 as pouchsecret
+nickname worn small shoulder pouch 1 as pouchitems
 nickname worn utility belt as pouchbelt
 frimble ## Nicknames: Change these to your appropriate pockets.
-nickname worn blood red cloak as pocketsmain
-nickname worn blood red cloak as pocketscoat
+nickname worn star lined cloak as pouchpocket
 
 frimble ## Nicknames: Change these to your appropriate medicine and component containers.
 nickname worn utility belt as kitmedicine
 nickname worn utility belt as kitcomponents
 
 frimble ## Nicknames: Change these to your appropriate special items.
-nickname yellow stone ring as itemlight
+nickname copper oak leaf ring as itemlight
 nickname blue crystal necklace as itemtalk
-nickname keyring as itemkeys
 
 frimble ## Nicknames: Change these to your appropriate weapons and scabbards.
-nickname diamondback sky katana as weaponmain
+nickname steel-temperd katana as weaponmain
 nickname worn sapphire-studded sword belt as scabbardmain
-nickname wakizashi as weaponsecond
+nickname darkened makhairai as weaponsecond
 nickname worn sapphire-studded sword belt as scabbardsecond
 nickname black shafted mace as weaponblunt
 nickname worn belt loop as scabbardblunt
-nickname diamondback sky katana as weaponsharp
+nickname darkened makhairai as weaponsharp
 nickname worn sapphire-studded sword belt as scabbardsharp
 nickname crystal-bladed daggers as weaponsmall
 nickname worn oiled leather thigh sheaths as scabbardsmall

@@ -11,6 +11,8 @@ alias set category openall Containers
 alias closeall2 close bagquest&pouchmoney&pouchitems&pouchbelt;
 alias set category closeall Containers
 
+frimble ##############################################################################################################################
+frimble #### Alias commands for checking item conditions
 alias con $ifarg: condition $*$ $else$ condition my all $endif$ sorting up
 alias set category con Containers
 alias cona $ifarg: condition $*$ $else$ openall2;condition my all & all in my all$endif$ sorting up;closeall2;
@@ -25,70 +27,64 @@ alias set category conw Containers
 frimble ##############################################################################################################################
 frimble #### Alias commands for managing 2 larger bags, one for loot, one for keeps. Requires appropriate bag nicknames to be set up.
 alias sts $ifarg:put $*$ in bagmain $else$ frimble You need to specify something. $endif$
-alias str $ifarg:take $*$ from bagmain $else$ frimble You need to specify something. $endif$
-alias stl open bagmain;look bagmain;close bagmain;
-alias stss $ifarg:put $*$ in bagquest $else$ frimble You need to specify something. $endif$
-alias stsr $ifarg:take $*$ from bagquest $else$ frimble You need to specify something. $endif$
-alias stsl open bagquest;look bagquest;close bagquest
-alias stls $ifarg:put $*$ in bagloot $else$ frimble You need to specify something. $endif$
-alias stlr $ifarg:take $*$ from bagloot $else$ frimble You need to specify something. $endif$
-alias stll open bagloot;look bagloot;close bagloot
 alias set category sts Containers
+alias str $ifarg:take $*$ from bagmain $else$ frimble You need to specify something. $endif$
 alias set category str Containers
+alias stl open bagmain;look bagmain;close bagmain;
 alias set category stl Containers
+alias stss $ifarg:put $*$ in bagquest $else$ frimble You need to specify something. $endif$
 alias set category stss Containers
+alias stsr $ifarg:take $*$ from bagquest $else$ frimble You need to specify something. $endif$
 alias set category stsr Containers
+alias stsl open bagquest;look bagquest;close bagquest
 alias set category stsl Containers
+alias stls $ifarg:put $*$ in bagloot $else$ frimble You need to specify something. $endif$
 alias set category stls Containers
+alias stlr $ifarg:take $*$ from bagloot $else$ frimble You need to specify something. $endif$
 alias set category stlr Containers
+alias stll open bagloot;look bagloot;close bagloot
 alias set category stll Containers
 
 frimble ##############################################################################################################################
-frimble #### Alias commands for managing 2 set of pockets (ie: trousers,cloak).  Requires appropriate pocket nicknames to be set up.
-alias pocket $ifarg:put $*$ in pocketsmain $else$ frimble You need to specify something. $endif$
-alias pocketr $ifarg:take $*$ from pocketsmain $else$ frimble You need to specify something. $endif$
-alias pocketl look pocketsmain
-alias pocketc $ifarg:put $*$ in pocketscoat $else$ frimble You need to specify something. $endif$
-alias pocketcr $ifarg:take $*$ from pocketscoat $else$ frimble You need to specify something. $endif$
-alias pocketcl look pocketscoat
+frimble #### Alias commands for managing pockets (ie: trousers,cloak).  Requires appropriate pocket nicknames to be set up.
+alias pocket $ifarg:put $*$ in pouchpocket $else$ frimble You need to specify something. $endif$
 alias set category pocket Containers
+alias pocketr $ifarg:take $*$ from pouchpocket $else$ frimble You need to specify something. $endif$
 alias set category pocketr Containers
+alias pocketl look pouchpocket
 alias set category pocketl Containers
-alias set category pocketc Containers
-alias set category pocketcr Containers
-alias set category pocketcl Containers
 
 frimble ##############################################################################################################################
 frimble #### Alias commands for managing coin pouch. Works on valauble coins only by default.  Requires appropriate pouch nicknames to be set up.
 alias coin $ifarg:put $*$ in pouchmoney $else$ put coinsveryhigh in pouchmoney;put coinshigh in pouchmoney; $endif$
-alias coins $ifarg:put $*$ in pouchmoney $else$ put coinsveryhigh in pouchmoney;put coinshigh in pouchmoney; $endif$
-alias coinr $ifarg:take $*$ from pouchmoney $else$ take coins from pouchmoney $endif$
-alias coinl open pouchmoney;look pouchmoney;close pouchmoney $*$
 alias set category coin Containers
+alias coins $ifarg:put $*$ in pouchmoney $else$ put coinsveryhigh in pouchmoney;put coinshigh in pouchmoney; $endif$
 alias set category coins Containers
+alias coinr $ifarg:take $*$ from pouchmoney $else$ take coins from pouchmoney $endif$
 alias set category coinr Containers
+alias coinl open pouchmoney;look pouchmoney;close pouchmoney $*$
 alias set category coinl Containers
 
 frimble ##############################################################################################################################
 frimble #### Alias commands for managing a second pouch for small items.  Requires appropriate pouch nicknames to be set up.
-alias pouch $ifarg:put $*$ in pouchsecret $else$ frimble You need to specify something. $endif$
-alias pouchs $ifarg:put $*$ in pouchsecret $else$ frimble You need to specify something. $endif$
-alias pouchr $ifarg:take $*$ from pouchsecret $else$ frimble You need to specify something. $endif$
-alias pouchl open pouchsecret;look pouchsecret;close pouchsecret
+alias pouch $ifarg:put $*$ in pouchitems $else$ frimble You need to specify something. $endif$
 alias set category pouch Containers
+alias pouchs $ifarg:put $*$ in pouchitems $else$ frimble You need to specify something. $endif$
 alias set category pouchs Containers
+alias pouchr $ifarg:take $*$ from pouchitems $else$ frimble You need to specify something. $endif$
 alias set category pouchr Containers
+alias pouchl open pouchitems;look pouchitems;close pouchitems
 alias set category pouchl Containers
 
 frimble ##############################################################################################################################
 frimble #### Alias commands for managing a belt with pouches. Requires appropriate belt nickname to be set up.
 alias belt $ifarg:put $*$ in pouchbelt $else$ frimble You need to specify something. $endif$
-alias belts $ifarg:put $*$ in pouchbelt $else$ frimble You need to specify something. $endif$
-alias beltr $ifarg:take $*$ from pouchbelt $else$ frimble You need to specify something. $endif$
-alias beltl open pouchbelt;look pouchbelt;close pouchbelt
 alias set category belt Containers
+alias belts $ifarg:put $*$ in pouchbelt $else$ frimble You need to specify something. $endif$
 alias set category belts Containers
+alias beltr $ifarg:take $*$ from pouchbelt $else$ frimble You need to specify something. $endif$
 alias set category beltr Containers
+alias beltl open pouchbelt;look pouchbelt;close pouchbelt
 alias set category beltl Containers
 
 frimble ##############################################################################################################################

@@ -44,10 +44,9 @@ frimble ## Additional identity lines. Do not edit.
 identify bagloot as loot bag
 identify bagquest as quest bag
 identify bagmoney as money bag
-identify pouchsecret as secret bag
+identify pouchitems as secret bag
 identify pouchbelt as utility bag
-identify pocketsmain as pocket
-identify pocketscoat as cloak pocket
+identify pouchpocket as pocket
 identify itemlight as lightring
 identify itemtalk as talker
 identify itemkeys as keys
