@@ -1,22 +1,22 @@
 frimble ##############################################################################################################################
 frimble ## Aliases for weapons drawing and sheathing. Requires weapon nicknames to be set up.
-alias d1 sh;draw weaponmain from scabbardmain;alias sh sheathe weaponmain in scabbardmain;
-alias d2 sh;draw weaponsecond from scabbardsecond;alias sh sheathe weaponsecond in scabbardsecond;
-alias d3 sh;draw weaponblunt from scabbardblunt;alias sh sheathe weaponblunt in scabbardblunt;
-alias d4 sh;draw weaponsharp from scabbardsharp;alias sh sheathe weaponsharp in scabbardsharp;
-alias d5 sh;draw weaponsmall from scabbardsmall;alias sh sheathe weaponsmall in scabbardsmall;
-alias d6 sh;draw weaponfired from scabbardfired;alias sh sheathe weaponfired in scabbardfired;
-alias d7 sh;draw weaponthrown from scabbardthrown;alias sh sheathe weaponthrown in scabbardthrown;
-alias d0 sh;draw weaponstealth from scabbardstealth;alias sh sheathe weaponstealth in scabbardstealth;
-alias sh sheathe weaponmain in scabbardmain;
-alias s1 sheathe weaponmain in scabbardmain
-alias s2 sheathe weaponsecond in scabbardsecond
-alias s3 sheathe weaponblunt in scabbardblunt
-alias s4 sheathe weaponsharp in scabbardsharp
-alias s5 sheathe weaponsmall in scabbardsmall
-alias s6 sheathe weaponfired in scabbardfired
-alias s7 sheathe weaponthrown in scabbardthrown
-alias s0 sheathe weaponstealth in scabbardstealth
+alias d1 sh;draw weapon1 from scabbard1;alias sh sheathe weapon1 in scabbard1;
+alias d2 sh;draw weapon2 from scabbard2;alias sh sheathe weapon2 in scabbard2;
+alias d3 sh;draw weapon3 from scabbard3;alias sh sheathe weapon3 in scabbard3;
+alias d4 sh;draw weapon4 from scabbard4;alias sh sheathe weapon4 in scabbard4;
+alias d5 sh;draw weapon5 from scabbard5;alias sh sheathe weapon5 in scabbard5;
+alias d6 sh;draw weapon6 from scabbard6;alias sh sheathe weapon6 in scabbard6;
+alias d7 sh;draw weapon7 from scabbard7;alias sh sheathe weapon7 in scabbard7;
+alias d0 sh;draw weapon8 from scabbard8;alias sh sheathe weapon8 in scabbard8;
+alias sh sheathe weapon1 in scabbardmain;
+alias s1 sheathe weapon2 in scabbardmain
+alias s2 sheathe weapon3 in scabbardsecond
+alias s3 sheathe weapon4 in scabbardblunt
+alias s4 sheathe weapon5 in scabbardsharp
+alias s5 sheathe weapon6 in scabbardsmall
+alias s6 sheathe weapon7 in scabbardfired
+alias s7 sheathe weapon8 in scabbardthrown
+alias s0 sheathe weapon8 in scabbardstealth
 alias set category sh Weapons
 alias set category s1 Weapons
 alias set category s2 Weapons
